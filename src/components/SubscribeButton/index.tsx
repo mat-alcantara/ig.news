@@ -4,13 +4,9 @@ import styles from "./styles.module.scss";
 import { api } from "../../services/api";
 import { getStripeJs } from "../../services/stripe-js";
 import { redirect } from "next/dist/next-server/server/api-utils";
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 
-interface SubscribeButtonProps {
-  priceId: string;
-}
-
-export const SubscribeButton = ({ priceId }: SubscribeButtonProps) => {
+export const SubscribeButton = () => {
   const [session] = useSession();
   const router = useRouter();
 

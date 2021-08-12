@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useSession } from "next-auth/client";
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
 import { RichText } from "prismic-dom";
