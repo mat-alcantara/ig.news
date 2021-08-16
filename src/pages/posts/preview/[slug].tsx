@@ -8,7 +8,7 @@ import { RichText } from "prismic-dom";
 import { useEffect } from "react";
 import { getPrismicClient } from "../../../services/prismic";
 
-import styles from "../post.module.scss";
+import styles from "../../../styles/post.module.scss";
 
 interface PostProps {
   post: {
