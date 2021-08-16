@@ -14,7 +14,7 @@ interface Post {
 }
 
 interface PostsProps {
-  posts: Post[];
+  posts?: Post[];
 }
 
 const Posts = ({ posts }: PostsProps) => {
@@ -25,7 +25,7 @@ const Posts = ({ posts }: PostsProps) => {
       </Head>
       <main className={styles.container}>
         <div className={styles.posts}>
-          {posts.map((post) => (
+          {posts?.map((post) => (
             <Link key={post.slug} href={`posts/${post.slug}`}>
               <a>
                 <time>{post.updatedAt}</time>
